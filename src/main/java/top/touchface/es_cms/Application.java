@@ -7,6 +7,7 @@ import org.springframework.boot.web.servlet.ServletComponentScan;
 
 /**
  * ES_CMS程序启动入口
+ *
  */
 @SpringBootApplication
 @MapperScan("top.touchface.es_cms.mapper")
