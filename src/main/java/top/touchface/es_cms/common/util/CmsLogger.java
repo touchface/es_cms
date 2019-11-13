@@ -2,7 +2,6 @@ package top.touchface.es_cms.common.util;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import top.touchface.es_cms.web.context.ESCmsContext;
 
 /**
  * <p>
@@ -12,7 +11,7 @@ import top.touchface.es_cms.web.context.ESCmsContext;
  * @author touchface
  * @since 2019/9/26
  */
-public class CMSLogger {
-    public final static Logger logger=LoggerFactory.getLogger(CMSLogger.class);
+public class CmsLogger {
+    public final static Logger logger=LoggerFactory.getLogger(CmsLogger.class);
 }
 

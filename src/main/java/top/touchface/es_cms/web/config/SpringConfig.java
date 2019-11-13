@@ -1,4 +1,4 @@
-package top.touchface.es_cms.config;
+package top.touchface.es_cms.web.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.ImportResource;

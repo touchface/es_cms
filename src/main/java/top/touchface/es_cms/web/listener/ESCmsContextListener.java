@@ -1,5 +1,4 @@
 package top.touchface.es_cms.web.listener;
-import top.touchface.es_cms.common.util.CMSLogger;
 import top.touchface.es_cms.web.context.ESCmsContext;
 
 import javax.servlet.ServletContextEvent;

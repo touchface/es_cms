@@ -1,4 +1,4 @@
-package top.touchface.es_cms.config;
+package top.touchface.es_cms.web.config;
 
 import com.alibaba.fastjson.serializer.SerializerFeature;
 import com.alibaba.fastjson.support.config.FastJsonConfig;

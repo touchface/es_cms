@@ -2,7 +2,7 @@ package top.touchface.es_cms.web.context;
 
 import org.springframework.web.context.WebApplicationContext;
 import org.springframework.web.context.support.WebApplicationContextUtils;
-import top.touchface.es_cms.common.util.CMSLogger;
+import top.touchface.es_cms.common.util.CmsLogger;
 
 import javax.servlet.ServletContext;
 import java.util.Map;
@@ -26,24 +26,24 @@ public class ESCmsContext {
      * @param sc 应用上下文对象
      */
     public static void init(ServletContext sc) {
-        CMSLogger.logger.info("ES_CMS 系统初始化开始");
+        CmsLogger.logger.info("ES_CMS 系统初始化开始");
         servletContext=sc;
         webApplicationContext=WebApplicationContextUtils.getWebApplicationContext(servletContext);
         loadEsCmsCode();
-        CMSLogger.logger.info("ES_CMS 系统初始化完成");
+        CmsLogger.logger.info("ES_CMS 系统初始化完成");
     }
 
     public static void destroyed(){
-        CMSLogger.logger.info("ES_CMS 系统关闭");
+        CmsLogger.logger.info("ES_CMS 系统关闭");
     }
 
     /**
      * 从上下文对象中获取码表信息
      */
     private static void loadEsCmsCode(){
-        CMSLogger.logger.info("ES_CMS 系统码表加载开始");
+        CmsLogger.logger.info("ES_CMS 系统码表加载开始");
         ESCmsCachedCode= (ESCmsCachedCode) webApplicationContext.getBean("ES_CMS_CODE");
-        CMSLogger.logger.info("ES_CMS 系统码表加载完成");
+        CmsLogger.logger.info("ES_CMS 系统码表加载完成");
     }
     /**
      * 获取指定名称的码表
