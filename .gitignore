@@ -5,3 +5,5 @@
 *.idea
 /target
 /src/main/resources/rebel.xml
+/src/main/resources/application.yml
+/src/main/java/top/touchface/es_cms/generator
