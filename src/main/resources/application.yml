@@ -33,4 +33,4 @@ mybatis-plus:
 jwt:
   secret: secret
   expiration: 7200000
-  token: Authorization
+  header: Authorization

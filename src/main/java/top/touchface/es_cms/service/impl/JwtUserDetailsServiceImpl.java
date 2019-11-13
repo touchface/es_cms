@@ -40,7 +40,7 @@ public class JwtUserDetailsServiceImpl implements UserDetailsService {
             throw new UsernameNotFoundException("用户不存在！");
         }
         // 创建用户校验详情对象
-        UserDetails userDetails=new ESCmsUserDetails();
+        ESCmsUserDetails userDetails=new ESCmsUserDetails();
         // 将数据库中对应的用户信息拷贝到校验对象当中
         BeanUtils.copyProperties(user,userDetails);
         return userDetails;
